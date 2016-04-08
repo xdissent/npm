@@ -15,6 +15,7 @@ install:
   - npm config set spin false
   - npm install -g npm/npm#lts
   - set PATH=%APPDATA%\npm;%PATH%
+  - npm install
 
 test_script:
   - node --version
