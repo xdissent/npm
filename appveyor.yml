@@ -19,11 +19,11 @@ test_script:
   - node --version
   - npm --version
   - npm test
-notifications:
-- provider: Slack
-  auth_token:
-    secure: i3Suz1hD0d1liX3M/sCcLq44Mb5dnT9Qb35vOxNgKUU=
-  channel: '#cli-gh-updates'
+# notifications:
+# - provider: Slack
+#   auth_token:
+#     secure: i3Suz1hD0d1liX3M/sCcLq44Mb5dnT9Qb35vOxNgKUU=
+#   channel: '#cli-gh-updates'
 # GO_FAST
 matrix:
   fast_finish: true
