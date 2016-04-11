@@ -1,10 +1,13 @@
 environment:
   matrix:
-    - nodejs_version: "0.8"
+    # LTS first
+    - nodejs_version: "4"
+    # latest next
+    - nodejs_version: "5"
+    # I like 0.10 better than 0.12
     - nodejs_version: "0.10"
     - nodejs_version: "0.12"
-    - nodejs_version: "4"
-    - nodejs_version: "5"
+    - nodejs_version: "0.8"
 platform:
   - x86
   - x64
