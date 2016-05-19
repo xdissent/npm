@@ -68,7 +68,7 @@ test('shrinkwrap gets correct _from and _resolved (#7121)', function (t) {
       var shrinkwrap = require(resolve(pkg, 'npm-shrinkwrap.json'))
       t.equal(
         shrinkwrap.dependencies.child.from,
-        'git://localhost:1234/child.git#master',
+        'child@git://localhost:1234/child.git#master',
         'npm shrinkwrapped from correctly'
       )
 
